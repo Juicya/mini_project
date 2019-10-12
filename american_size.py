@@ -1,4 +1,5 @@
 # Don't you know your american size jeans and shoes? I can fix it.
+
 # Accept user input for sex, weight, height, and European shoe size.
 sex = input('Укажите Ваш пол (м или ж): ')
 waist = float(input('Укажите Ваш объем талии в сантиметрах: '))
@@ -6,6 +7,7 @@ height = float(input('Укажите Ваш рост в сантиметрах: 
 shoe_size = int(input('Укажите российский (европейский) размер обуви: '))
 
 print('Ваш американский размер джинсов: ', end='')
+
 # Estimate American jeans length by height.
 if 155 <= height < 162:
     print('L28', end=' ')
@@ -86,6 +88,7 @@ else:
 
 # Estimate American shoe size by European shoe size.
 print('Ваш американский размер обуви: ', end='')
+
 if sex == 'ж':
     if shoe_size == 34:
         print('4')
